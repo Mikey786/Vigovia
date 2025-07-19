@@ -1,0 +1,263 @@
+/* --- Global Styles for the Booking Page --- */
+.booking-page-wrapper {
+    background-color: #FBF4FF; /* Light lavender from palette */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: #321E5D; /* Dark indigo for text */
+}
+
+.landing-nav {
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.landing-logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+/* --- Main Container & Typography --- */
+.booking-page-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 40px 80px;
+}
+
+.booking-page-container h1 {
+    text-align: center;
+    color: #321E5D;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.booking-page-container .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* --- Form Layout & Fieldsets --- */
+.form-layout {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.form-layout fieldset {
+    border: 2px solid #EAD8FF; /* Light purple border */
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: border-color 0.3s ease;
+}
+
+.form-layout fieldset:hover {
+    border-color: #D4B6FF;
+}
+
+.details-fieldset {
+    background: #FDFAFF;
+}
+
+.form-layout legend {
+    padding: 0 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #680099; /* Hover purple for legends */
+}
+
+.form-layout label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #321E5D;
+}
+
+/* --- Input Fields --- */
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #EAD8FF;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    color: #321E5D;
+    background: white;
+}
+
+.textarea-field {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+    outline: none;
+    border-color: #936FE0; /* Light purple focus */
+    box-shadow: 0 0 0 3px rgba(147, 111, 224, 0.2);
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+    color: #aaa;
+}
+
+/* --- Dynamic Sections & Items --- */
+.item-section {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+.item-section:first-of-type {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+}
+
+.item-title {
+    margin: 0 0 20px;
+    color: #321E5D;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.dynamic-item {
+    background: #FDFAFF;
+    border: 2px solid #EAD8FF;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    /* --- KEY ALIGNMENT CHANGE --- */
+    display: flex;
+    gap: 15px;
+    align-items: flex-start; /* Aligns button to the top with the inputs */
+}
+
+.item-inputs {
+    flex-grow: 1; /* This container will take up all available space */
+}
+
+.item-actions {
+    flex-shrink: 0; /* Prevents the button container from shrinking */
+}
+
+.item-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+/* --- Button Styling --- */
+.remove-button {
+    background: transparent;
+    border: 2px solid #ffb3b3;
+    color: #e74c3c;
+    padding: 10px 16px; /* Match height of input fields */
+    line-height: 1.5; /* Ensure text is centered vertically */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.remove-button:hover {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+}
+
+.add-button {
+    background: #F9EEFF;
+    color: #321E5D;
+    border: 2px solid #EAD8FF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.add-button:hover {
+    background: #EAD8FF;
+    border-color: #D4B6FF;
+    transform: translateY(-1px);
+}
+
+.generate-button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #541C9C, #680099); /* Main CTA colors */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.generate-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.generate-button:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(84, 28, 156, 0.3);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .booking-page-container {
+        padding: 0 20px 60px;
+    }
+    .form-layout {
+        padding: 20px;
+    }
+    .booking-page-container h1 {
+        font-size: 2rem;
+    }
+    .form-layout legend {
+        font-size: 1.1rem;
+    }
+    .item-row {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .booking-page-container {
+        padding: 0 15px 40px;
+    }
+    .form-layout {
+        padding: 15px;
+    }
+    .dynamic-item {
+        padding: 15px;
+        flex-direction: column;
+    }
+    .item-actions {
+        width: 100%;
+    }
+    .remove-button {
+        width: 100%;
+    }
+}

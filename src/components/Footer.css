@@ -1,0 +1,153 @@
+.footer-container {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #F8F7FF; /* Light lavender background */
+    padding-top: 40px;
+}
+
+.footer-top-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 5% 20px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 40px;
+}
+
+.footer-top-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-top-links a:hover {
+    color: #680099;
+}
+
+.footer-main {
+    padding: 0 5%;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #321E5D;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #680099;
+}
+
+.contact-column .contact-box {
+    margin-bottom: 20px;
+}
+
+.contact-column p {
+    margin: 0 0 5px;
+    font-size: 12px;
+    color: #666;
+}
+.contact-column strong {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+.contact-column .contact-box:first-child strong {
+    background-color: #321E5D;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #E0E0E0;
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+.footer-payments {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-payments h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+.footer-payments img {
+    height: 25px;
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #321E5D;
+    color: #fff;
+    padding: 15px 5%;
+}
+
+.footer-legal p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #680099;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+}
+
+.legal-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+}
