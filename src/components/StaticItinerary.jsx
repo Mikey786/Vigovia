@@ -6,7 +6,6 @@ const Itinerary = () => {
   return (
     <>
       <div className="logo-container">
-        {/* Add your logo image source here */}
         <img src="src/assets/vigovia.png" alt="Vigovia Logo" className="main-logo" />
       </div>
 
@@ -47,7 +46,7 @@ const Itinerary = () => {
           </div>
         </div>
 
-        {/* --- Daily Itinerary --- */}
+        
         <div className="daily-itinerary-item pdf-section">
           <div className="day-sidebar">
             <span>Day 1</span>
@@ -221,7 +220,7 @@ const Itinerary = () => {
           </div>
         </div>
 
-        {/* --- Flight Summary --- */}
+        
         <div className="section  pdf-section">
           <h3 className="section-title"><span>Flight</span> <span className="highlight">Summary</span></h3>
           <div className="summary-item-row  pdf-section">
@@ -262,7 +261,7 @@ const Itinerary = () => {
 </br>
 
 
-        {/* --- Hotel Bookings --- */}
+        
         <div className="section  pdf-section">
           <h3 className="section-title"><span>Hotel</span> <span className="highlight">Bookings</span></h3>
           <div className="custom-table hotel-table">
@@ -314,7 +313,7 @@ const Itinerary = () => {
           </ul>
         </div>
 
-        {/* --- Important Notes --- */}
+        
         <div className="section  pdf-section">
             <h3 className="section-title"><span>Important</span> <span className="highlight">Notes</span></h3>
             <div className="custom-table notes-table">
@@ -339,7 +338,7 @@ const Itinerary = () => {
             </div>
         </div>
 
-        {/* --- Scope of Service --- */}
+        
         <div className="section  pdf-section">
             <h3 className="section-title"><span>Scope Of</span> <span className="highlight">Service</span></h3>
             <div className="custom-table service-table  pdf-section">
@@ -387,7 +386,7 @@ const Itinerary = () => {
 </br>
 
 
-        {/* --- Inclusion Summary --- */}
+        
         <div className="section">
           <h3 className="section-title"><span>Inclusion</span> <span className="highlight">Summary</span></h3>
           <div className="custom-table inclusion-table">
@@ -420,7 +419,7 @@ const Itinerary = () => {
           </div>
         </div>
 
-        {/* --- Activity Table --- */}
+        
         <div className="section">
           <h3 className="section-title"><span>Activity</span> <span className="highlight">Table</span></h3>
           <div className="custom-table activity-table">
@@ -465,14 +464,14 @@ const Itinerary = () => {
           </div>
         </div>
         
-        {/* --- Terms and Conditions --- */}
+        
         <div className="section">
             <h3 className="section-title"><span>Terms and</span> <span className="highlight">Conditions</span></h3>
             <a href="#" className="terms-link">View all terms and conditions</a>
         </div>
 
 
-        {/* --- Payment Plan --- */}
+        
         <div className="section">
           <h3 className="section-title"><span>Payment</span> <span className="highlight">Plan</span></h3>
           <div className="summary-item-row">
@@ -518,7 +517,7 @@ const Itinerary = () => {
 <br>
 </br>
 
-        {/* --- Visa Details --- */}
+        
         <div className="section">
             <h3 className="section-title"><span>Visa</span> <span className="highlight">Details</span></h3>
             <div className="visa-details-box">

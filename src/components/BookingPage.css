@@ -1,9 +1,8 @@
-/* --- Global Styles for the Booking Page --- */
 .booking-page-wrapper {
-    background-color: #FBF4FF; /* Light lavender from palette */
+    background-color: #FBF4FF;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    color: #321E5D; /* Dark indigo for text */
+    color: #321E5D;
 }
 
 .landing-nav {
@@ -17,7 +16,7 @@
     object-fit: contain;
 }
 
-/* --- Main Container & Typography --- */
+
 .booking-page-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -43,7 +42,7 @@
     line-height: 1.6;
 }
 
-/* --- Form Layout & Fieldsets --- */
+
 .form-layout {
     background: white;
     padding: 40px;
@@ -52,7 +51,7 @@
 }
 
 .form-layout fieldset {
-    border: 2px solid #EAD8FF; /* Light purple border */
+    border: 2px solid #EAD8FF; 
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 30px;
@@ -71,7 +70,7 @@
     padding: 0 15px;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #680099; /* Hover purple for legends */
+    color: #680099; 
 }
 
 .form-layout label {
@@ -81,7 +80,6 @@
     color: #321E5D;
 }
 
-/* --- Input Fields --- */
 .input-field,
 .textarea-field {
     width: 100%;
@@ -104,7 +102,7 @@
 .input-field:focus,
 .textarea-field:focus {
     outline: none;
-    border-color: #936FE0; /* Light purple focus */
+    border-color: #936FE0; 
     box-shadow: 0 0 0 3px rgba(147, 111, 224, 0.2);
 }
 
@@ -113,7 +111,7 @@
     color: #aaa;
 }
 
-/* --- Dynamic Sections & Items --- */
+
 .item-section {
     padding-top: 20px;
     margin-top: 20px;
@@ -139,18 +137,17 @@
     border-radius: 12px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
-    /* --- KEY ALIGNMENT CHANGE --- */
     display: flex;
     gap: 15px;
-    align-items: flex-start; /* Aligns button to the top with the inputs */
+    align-items: flex-start;
 }
 
 .item-inputs {
-    flex-grow: 1; /* This container will take up all available space */
+    flex-grow: 1;
 }
 
 .item-actions {
-    flex-shrink: 0; /* Prevents the button container from shrinking */
+    flex-shrink: 0; 
 }
 
 .item-row {
@@ -159,13 +156,13 @@
     gap: 15px;
 }
 
-/* --- Button Styling --- */
+
 .remove-button {
     background: transparent;
     border: 2px solid #ffb3b3;
     color: #e74c3c;
-    padding: 10px 16px; /* Match height of input fields */
-    line-height: 1.5; /* Ensure text is centered vertically */
+    padding: 10px 16px; 
+    line-height: 1.5; 
     border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
@@ -206,7 +203,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: white;
-    background: linear-gradient(135deg, #541C9C, #680099); /* Main CTA colors */
+    background: linear-gradient(135deg, #541C9C, #680099);
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -225,7 +222,6 @@
     box-shadow: 0 6px 20px rgba(84, 28, 156, 0.3);
 }
 
-/* --- Responsive Design --- */
 @media (max-width: 768px) {
     .booking-page-container {
         padding: 0 20px 60px;

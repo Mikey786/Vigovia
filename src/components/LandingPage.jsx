@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import './LandingPage.css';
-
-// Import assets
 import logo from '../assets/vigovia.png';
 import heroImage from '../assets/maldives.jpg';
 import dest1 from '../assets/bali.jpg';
